@@ -14,10 +14,10 @@
 
         default {
             bindings = <
-&kp ESC    &kp SEMI   &kp COMMA  &kp DOT   &kp P      &kp Y       &kp F    &kp G      &kp C     &kp R  &kp L    &kp FSLH
-&kp TAB    &kp A      &kp O      &kp E     &kp U      &kp I       &kp D    &kp H      &kp T     &kp N  &kp S    &kp BSLH
-&kp LCTRL  &lt 1 SQT  &kp Q      &kp J     &kp K      &kp X       &kp B    &kp M      &kp W     &kp V  &lt 2 Z  &kp RSHFT
-                                 &kp LGUI  &kp SPACE  &kp BSPC    &kp RET  &kp GRAVE  &kp RALT
+&kp ESC         &kp SQT        &kp COMMA  &kp DOT   &kp P      &kp Y       &kp F    &kp G      &kp C     &kp R  &kp Z    &kp BACKSLASH
+&kp TAB         &kp SEMICOLON  &kp O      &kp E     &kp U      &kp I       &kp D    &kp H      &kp T     &kp N  &kp L    &kp SLASH
+&kp LEFT_SHIFT  &lt 1 A        &kp Q      &kp J     &kp K      &kp X       &kp B    &kp M      &kp W     &kp V  &lt 2 S  &kp RSHFT
+                                          &kp LGUI  &kp SPACE  &kp BSPC    &kp RET  &kp GRAVE  &kp RALT
             >;
         };
 
@@ -29,18 +29,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans      &trans     &trans      &trans         &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans      &trans     &trans      &trans         &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                            &trans     &trans      &trans         &trans  &kp N0  &trans
+&trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans            &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans            &trans             &trans         &trans            &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &kp K_UNDO        &kp K_CUT          &kp C_AC_COPY  &kp C_AC_PASTE    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                                  &trans             &trans         &trans            &trans  &kp N0  &trans
             >;
         };
 
         right_upper {
             bindings = <
-&trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &trans    &kp UP    &trans     &trans  &trans
-&trans  &trans      &trans        &trans        &trans        &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans      &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans     &trans  &trans
+&trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &trans    &kp UP    &kp MINUS  &kp EQUAL  &trans
+&trans  &trans      &trans        &trans        &trans        &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
+&trans  &trans      &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans     &trans     &trans
                                   &trans        &trans        &trans    &trans  &trans    &trans
             >;
         };
