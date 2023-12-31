@@ -38,9 +38,9 @@
 
         mac_right_upper {
             bindings = <
-&bt BT_CLR    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp K_VOLUME_UP    &trans    &kp UP    &kp MINUS  &kp EQUAL  &trans
-&bt BT_SEL 0  &trans           &trans       &trans    &trans      &trans         &kp K_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
-&bt BT_SEL 1  &trans           &trans       &trans    &trans      &trans         &trans             &trans    &trans    &trans     &trans     &trans
+&bt BT_CLR    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp C_VOLUME_UP    &trans    &kp UP    &kp MINUS  &kp EQUAL  &trans
+&bt BT_SEL 0  &trans           &trans       &trans    &trans      &trans         &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
+&bt BT_SEL 1  &trans           &trans       &trans    &trans      &trans         &kp LC(SPACE)      &trans    &trans    &trans     &trans     &trans
                                             &trans    &trans      &trans         &trans             &trans    &trans
             >;
         };
@@ -65,10 +65,10 @@
 
         win_right_upper {
             bindings = <
-&bt BT_CLR    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp C_VOLUME_UP    &trans    &kp UP    &kp MINUS  &kp EQUAL  &trans
-&bt BT_SEL 0  &trans           &trans       &trans    &trans      &trans         &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
-&bt BT_SEL 1  &trans           &trans       &trans    &trans      &trans         &trans             &trans    &trans    &trans     &trans     &trans
-                                            &trans    &trans      &trans         &trans             &trans    &trans
+&bt BT_CLR    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp C_VOLUME_UP     &trans    &kp UP    &kp MINUS  &kp EQUAL  &trans
+&bt BT_SEL 0  &trans           &trans       &trans    &trans      &trans         &kp C_VOLUME_DOWN   &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
+&bt BT_SEL 1  &trans           &trans       &trans    &trans      &trans         &kp LA(LEFT_SHIFT)  &trans    &trans    &trans     &trans     &trans
+                                            &trans    &trans      &trans         &trans              &trans    &trans
             >;
         };
 
