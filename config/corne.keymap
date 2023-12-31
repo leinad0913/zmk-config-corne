@@ -12,7 +12,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default {
+        mac_default {
             bindings = <
 &kp ESC         &kp SQT        &kp COMMA  &kp DOT   &kp P      &kp Y       &kp F    &kp G      &kp C     &kp R  &kp Z    &kp BACKSLASH
 &kp TAB         &kp SEMICOLON  &kp O      &kp E     &kp U      &kp I       &kp D    &kp H      &kp T     &kp N  &kp L    &kp SLASH
@@ -21,7 +21,7 @@
             >;
         };
 
-        left_upper {
+        mac_left_upper {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -29,19 +29,46 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans            &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans            &trans             &trans         &trans            &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &kp K_UNDO        &kp K_CUT          &kp C_AC_COPY  &kp C_AC_PASTE    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                                  &trans             &trans         &trans            &trans  &kp N0  &trans
+&to 3   &trans  &kp LS(LPAR)        &kp LS(RPAR)      &kp LBKT             &kp RBKT     &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans       &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &kp LG(Z)           &kp LG(X)         &kp LG(C)            &kp LG(V)    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                                    &trans            &trans               &trans       &trans  &kp N0  &trans
             >;
         };
 
-        right_upper {
+        mac_right_upper {
             bindings = <
-&trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &trans    &kp UP    &kp MINUS  &kp EQUAL  &trans
-&trans  &trans      &trans        &trans        &trans        &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
-&trans  &trans      &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans     &trans     &trans
-                                  &trans        &trans        &trans    &trans  &trans    &trans
+&bt BT_CLR    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp K_VOLUME_UP    &trans    &kp UP    &kp MINUS  &kp EQUAL  &trans
+&bt BT_SEL 0  &trans           &trans       &trans    &trans      &trans         &kp K_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
+&bt BT_SEL 1  &trans           &trans       &trans    &trans      &trans         &trans             &trans    &trans    &trans     &trans     &trans
+                                            &trans    &trans      &trans         &trans             &trans    &trans
+            >;
+        };
+
+        win_default {
+            bindings = <
+&kp ESC    &kp SQT   &kp COMMA  &kp DOT   &kp P      &kp Y       &kp F    &kp G      &kp C     &kp R  &kp Z  &kp BSLH
+&kp TAB    &kp SEMI  &kp O      &kp E     &kp U      &kp I       &kp D    &kp H      &kp T     &kp N  &kp L  &kp FSLH
+&kp LSHFT  &kp A     &kp Q      &kp J     &kp K      &kp X       &kp B    &kp M      &kp W     &kp V  &kp S  &kp RSHFT
+                                &kp LGUI  &kp SPACE  &kp BSPC    &kp RET  &kp GRAVE  &kp RALT
+            >;
+        };
+
+        win_left_upper {
+            bindings = <
+&to 0   &trans  &kp LS(LPAR)            &kp LS(RPAR)  &kp LBKT                 &kp RBKT     &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)   &kp LC(LG(RIGHT_ARROW))  &trans       &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &kp LC(Z)               &kp LC(X)     &kp LC(C)                &kp LC(V)    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                                        &trans        &trans                   &trans       &trans  &kp N0  &trans
+            >;
+        };
+
+        win_right_upper {
+            bindings = <
+&bt BT_CLR    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp K_VOLUME_UP    &trans    &kp UP    &trans     &trans  &trans
+&bt BT_SEL 0  &trans           &trans       &trans    &trans      &trans         &kp K_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&bt BT_SEL 1  &trans           &trans       &trans    &trans      &trans         &trans             &trans    &trans    &trans     &trans  &trans
+                                            &trans    &trans      &trans         &trans             &trans    &trans
             >;
         };
 
